@@ -21,8 +21,9 @@ class WebElement():
             return False
         return True
 
+    # def get_text(self):
+    #     if self.find_element().text == "© 2013-2020 TOOLSQA.COM | ALL RIGHTS RESERVED.":
+    #        return str(self.find_element().text)
+
     def get_text(self):
-        if self.find_element().text == "© 2013-2020 TOOLSQA.COM | ALL RIGHTS RESERVED.":
-           return str(self.find_element().text)
-
-
+        return str(self.find_element().text)
