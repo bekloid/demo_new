@@ -13,6 +13,9 @@ class WebElement():
     def find_element(self):
         return self.driver.find_element(By.CSS_SELECTOR, self.locator)
 
+    def visible(self):
+        return self.find_element().is_displayed()
+
     def exist(self):
 
         try:
