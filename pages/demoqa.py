@@ -10,6 +10,7 @@ class DemoQa(BasePage):
         self.icon = WebElement(driver, '#app > header > a')
         self.btn_elements = WebElement(driver, '#app > div > div > div.home-body > div > div:nth-child(1)')
         self.text = WebElement(driver, "div > footer >span")
+        self.head = WebElement(driver,"head> title")
         super().__init__(driver, self.base_url)
 
     # def exist_icon(self):

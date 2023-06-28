@@ -1,4 +1,4 @@
-from components.components import WebElement
+
 from pages.base_page import BasePage
 from pages.elements_page import WebElement
 

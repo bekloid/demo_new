@@ -27,7 +27,7 @@ class BasePage:
     #     return self.driver.find_element(By.CSS_SELECTOR, locator)
 
     def get_title(self):
-        return self.driver.title()
+        return self.driver.title
 
     def equal_url(self):
         if self.get_url() == self.base_url:
