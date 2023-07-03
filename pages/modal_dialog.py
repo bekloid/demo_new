@@ -7,4 +7,4 @@ class ModalDialog(BasePage):
     def __init__(self, driver):
         self.base_url = 'https://demoqa.com/modal-dialogs'
         super().__init__(driver, self.base_url)
-        self.btn_count = WebElement(driver, "div:nth-child(3) > div > ul > li") # возможно, неверный локатор
+        self.btn_count = WebElement(driver, "div:nth-child(3) > div > ul > li")
