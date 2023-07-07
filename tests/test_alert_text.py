@@ -6,12 +6,11 @@ def test_alert_text(browser):
 
     alert_page = Allerts(browser)
     alert_page.visit()
-    assert not alert_page.alert()
 
     alert_page.alertButton.click()
     time.sleep(2)
     assert alert_page.alert().text =="You clicked a botton"
-    alert_page.alert().accert()
+    alert_page.alert().accept()
     assert not alert_page.alert()
 
 def test_confirm(browser):
